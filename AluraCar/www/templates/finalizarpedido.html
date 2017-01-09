@@ -1,0 +1,32 @@
+<ion-view>
+    <ion-nav-title>
+        Silvio Santos Javeiro
+    </ion-nav-title>
+    <ion-content>
+        
+
+ <div class="card">
+            <div class="item item-divider">
+                <h2>{{carroFinalizado.nome}}</h2>
+                <h2> ${{carroFinalizado.preco | currency}}</h2>
+            </div>
+            <div class="item item-text-wrap">
+                <div class="list">
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Nome Completo</span>
+                        <input type="text" ng-model="pedido.nome">
+                    </label>
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Endereço</span>
+                        <input type="text"ng-model="pedido.endereco">
+                    </label>
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Email</span>
+                        <input type="text"ng-model="pedido.email">
+                    </label>
+
+                </div>
+            </div>
+    <a class="button button-positive button-full" href="#/finalizarpedido/{{carroEscolhido}}" ng-click="finalizarpedido()">Finalizar!</a>
+    </ion-content>
+</ion-view>
